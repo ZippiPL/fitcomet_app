@@ -35,9 +35,8 @@ class _HomePage extends State<HomePage> {
     SettingsPage(),
   ];
 
-  Widget _buildContent(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
+  _appBar(){
+    return AppBar(
           iconTheme: IconThemeData(
             color: Colors.amber[300],
             size: 30,
@@ -49,7 +48,12 @@ class _HomePage extends State<HomePage> {
             'FitComet',
             style: TextStyle(color: Colors.amber[300], fontSize: 30),
           ),
-        ),
+        );
+  }
+
+  Widget _buildContent(BuildContext context) {
+    return Scaffold(
+        appBar: _appBar(),
         bottomNavigationBar: GNav(
           backgroundColor:Color.fromRGBO(90, 24, 154, 1) ,
           activeColor: Colors.white,
