@@ -1,6 +1,7 @@
 
 import 'package:fitcomet_app/route_generator.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(FitCometApp(),);
@@ -11,6 +12,6 @@ void main() {
 
     @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'FitCommet', initialRoute: '/',onGenerateRoute: RouteGenerator.generateRoute,);
+    return GetMaterialApp(title: 'FitCommet', initialRoute: '/',onGenerateRoute: RouteGenerator.generateRoute,);
   }
 }

@@ -68,7 +68,7 @@ class _HomePage extends State<HomePage> {
           GButton(icon: Icons.bakery_dining_outlined,
           text: 'Meals',),
           GButton(icon: Icons.medication_liquid_rounded,
-          text: 'Supplements',),
+          text: 'Supple',),
           GButton(icon: Icons.settings,
           text: 'Settings',)
         ]),

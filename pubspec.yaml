@@ -42,6 +42,9 @@ dependencies:
   flutter_native_timezone:
   intl:
   date_picker_timeline:
+  get:
+  stop_watch_timer: ^0.7.0
+  flutter_barcode_scanner: ^2.0.0
 
 dev_dependencies:
   flutter_test:

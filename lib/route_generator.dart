@@ -1,9 +1,12 @@
+import 'package:fitcomet_app/screens/home_page/addexcersisetoplanpage.dart';
+import 'package:fitcomet_app/screens/home_page/addmealpage.dart';
 import 'package:fitcomet_app/screens/home_page/homepage.dart';
 import 'package:fitcomet_app/screens/login_page/loginpage.dart';
 import 'package:fitcomet_app/screens/login_page/registeractivitypage.dart';
 import 'package:fitcomet_app/screens/login_page/registerdetailpage.dart';
 import 'package:fitcomet_app/screens/login_page/registerpage.dart';
 import 'package:fitcomet_app/screens/login_page/registeruserdatapage.dart';
+import 'package:fitcomet_app/screens/home_page/gympage.dart';
 import 'package:flutter/material.dart';
 
 class RouteGenerator {
@@ -25,7 +28,10 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => RegisterUserDataPage());
       case '/homepage':
         return MaterialPageRoute(builder: (_) => HomePage());
-
+      case '/addexcersisetoplanpage':
+        return MaterialPageRoute(builder: (_) => AddExcersisesPlanPage());
+        case '/addmealpage':
+        return MaterialPageRoute(builder: (_) => AddMealPage());
       default:
         return _errorRoute();
     }
